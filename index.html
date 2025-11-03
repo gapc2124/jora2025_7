@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Jora Restaurant en Pachacámac: cocina campestre de autor, eventos y reservas." />
+        <title>Jora Restaurant - Cocina Campestre de Autor</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/style.css" />
+
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        
+        <header class="site-header">
+            <div class="container header-inner">
+        
+                <div class="social-links-mobile">
+                    <a href="https://www.tiktok.com/@jorarestaurante" aria-label="TikTok Jora" target="_blank"><img src="imagenes/tiktok.webp" alt="TikTok"></a>
+                    <a href="https://www.instagram.com/jorarestaurante/?hl=es" aria-label="Instagram Jora" target="_blank"><img src="imagenes/ig.webp" alt="Instagram"></a>
+                </div>
+                
+                <div class="header-col-left"> 
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@jorarestaurante" aria-label="TikTok Jora" target="_blank"><img src="imagenes/tiktok.webp" alt="TikTok"></a>
+                        <a href="https://www.instagram.com/jorarestaurante/?hl=es" aria-label="Instagram Jora" target="_blank"><img src="imagenes/ig.webp" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/p/Jora-Restaurante-100068304454260/?locale=es_LA" aria-label="Facebook Jora" target="_blank"><img src="imagenes/ig.webp" alt="Facebook"></a>
+                        <a href="#" aria-label="YouTube Jora" target="_blank"><img src="imagenes/youtube.webp" alt="YouTube"></a>
+                    </div>
+                    <span class="nav-separator"></span>
+                    <nav class="primary-nav-desktop-left" aria-label="Navegación izquierda"> 
+                        <ul>
+                            <li><a href="#platos">Platos</a></li>
+                            <li><a href="#visitanos">Shows</a></li>
+                            <li><a href="#conocenos">Nosotros</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        
+                <a class="logo" href="#inicio" aria-label="Jora Restaurant - Ir a inicio" onclick="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});">
+                    <img src="imagenes/JORALOGOMEJOR.webp" alt="Logo de Jora Restaurant Campestre" width="260" height="76" />
+                </a>
+                
+                <div class="header-col-right">
+                    <nav class="primary-nav-desktop-right" aria-label="Navegación derecha"> 
+                        <ul>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="shows.html">Show</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                        </ul>
+                    </nav>
+                    <span class="nav-separator"></span>
+                    <div class="header-ctas">
+                        <a href="#reserva" class="nav-cta nav-cta-reserva"> 
+                            <img src="imagenes/reserva.webp" alt="Reservar">
+                            <span>Reserva</span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/1N38ejmfC8MJ4Jpj9" target="_blank" rel="noopener noreferrer" class="nav-cta nav-cta-ubicanos">
+                            <img src="imagenes/ubi.webp" alt="Ubicación">
+                            <span>Ubicanos</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav id="primary-nav-mobile" class="primary-nav-mobile" aria-label="Navegación principal móvil">
+                    <div class="social-links-mobile-in-menu">
+                        <a href="https://www.tiktok.com/@jorarestaurante" aria-label="TikTok Jora" target="_blank"><img src="imagenes/tiktok.webp" alt="TikTok"></a>
+                        <a href="https://www.instagram.com/jorarestaurante/?hl=es" aria-label="Instagram Jora" target="_blank"><img src="imagenes/ig.webp" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/p/Jora-Restaurante-100068304454260/?locale=es_LA" aria-label="Facebook Jora" target="_blank"><img src="imagenes/ig.webp" alt="Facebook"></a>
+                        <a href="#" aria-label="YouTube Jora" target="_blank"><img src="imagenes/youtube.webp" alt="YouTube"></a>
+                    </div>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="comida.html">Platos</a></li>
+                        <li><a href="bebidas.html">Bebidas</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="shows.html">Show</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-controls="primary-nav-mobile" aria-expanded="false" aria-label="Abrir menú" type="button">
+                    <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+                </button>
+                
+            </div>
+        </header>
+
+        <main id="inicio">
+            <section class="hero">
+                <div class="carousel" role="region" aria-label="Carrusel de imágenes">
+                    <div class="slides">
+                        <div class="slide active"><img src="./imagenes/foto1.webp" alt="Ambiente campestre soleado en Jora Restaurant" decoding="async" fetchpriority="high"></div>
+                        <div class="slide"><img src="./imagenes/foto2.webp" alt="Parrilla a la leña encendida" loading="lazy" decoding="async"></div>
+                        <div class="slide"><img src="./imagenes/foto3.webp" alt="Plato de comida típica peruana" loading="lazy" decoding="async"></div>
+                        <div class="slide"><img src="./imagenes/foto4.webp" alt="Evento social al aire libre" loading="lazy" decoding="async"></div>
+                        <div class="slide"><img src="./imagenes/foto5.webp" alt="Zona de juegos infantiles y áreas verdes" loading="lazy" decoding="async"></div>
+                    </div>
+                    <button class="prev" aria-label="Slide anterior" title="Anterior">❮</button>
+                    <button class="next" aria-label="Slide siguiente" title="Siguiente">❯</button>
+                    <div class="slider-dots" aria-label="Indicadores de carrusel" role="tablist"></div>
+                    
+                </div>
+            </section>
+            
+            <section id="platos-movil" class="section mobile-platos-carousel-section">
+                <h2 class="reserva-title" style="text-align: center; color: var(--color-secondary); margin-bottom: 24px;">Nuestros Platos Bandera</h2>
+                
+                <div class="mobile-platos-carousel" id="mobile-platos-carousel">
+                    
+                    <div class="carousel-slide active">
+                        <img src="./imagenes/plato_bandera_1.webp" alt="Plato bandera: Carne con puré y brotes">
+                        <div class="slide-text">
+                            Reinterpretamos la cocina campestre peruana...
+                            <br><a href="#reserva" class="btn-cta-carousel">Reserva Ya</a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./imagenes/plato_bandera_2.webp" alt="Plato bandera: Pescado con salsa amarilla y aguacate">
+                        <div class="slide-text">
+                            Reinterpretamos la cocina campestre peruana...
+                            <br><a href="#reserva" class="btn-cta-carousel">Reserva Ya</a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./imagenes/plato_bandera_3.webp" alt="Plato bandera: Cerdo crocante con ensalada">
+                        <div class="slide-text">
+                            Reinterpretamos la cocina campestre peruana...
+                            <br><a href="#reserva" class="btn-cta-carousel">Reserva Ya</a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./imagenes/plato_bandera_4.webp" alt="Plato bandera: Causa limeña con pollo y brotes">
+                        <div class="slide-text">
+                            Reinterpretamos la cocina campestre peruana...
+                            <br><a href="#reserva" class="btn-cta-carousel">Reserva Ya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav-mobile-platos">
+                    <button class="prev-platos" aria-label="Anterior">❮</button>
+                    <div class="carousel-dots-mobile-platos"></div>
+                    <button class="next-platos" aria-label="Siguiente">❯</button>
+                </div>
+            </section>
+            <div class="single-background-area">
+
+                <section id="platos" class="section dual-focus-section">
+    
+                    <div class="container container-wide">
+                        <div class="dual-layout-container">
+                            <div class="dual-card card-platos">
+                                <div class="platos-texto">
+                                    <h2>Platos Bandera</h2>
+                                    <p class="section-desc">Reinterpretamos la cocina campestre con ingredientes frescos y locales, con un sabor a la leña delicioso.</p>
+                                    <ul class="platos-opciones">
+                                        <li class="opcion-descargar"><a href="./archivos/CARTA.pdf" download>Descargar Carta</a></li>
+                                        <li><a href="comida.html#fondos" data-target="1">Fondos</a></li>
+                                        <li><a href="bebidas.html" data-target="2">Bebidas</a></li>
+                                        <li><a href="comida.html#postres" data-target="3">Postres</a></li>
+                                        <li><a href="comida.html#entradas" data-target="4">Entradas</a></li>
+                                    </ul>
+                                </div>
+                                <div class="platos-fotos">
+                                    <figure class="pb plato-1" data-id="1"><img src="./imagenes/plato_bandera_1.webp" alt="Plato bandera: Carne con puré y brotes" loading="lazy" decoding="async"></figure>
+                                    <figure class="pb plato-2" data-id="2"><img src="./imagenes/plato_bandera_2.webp" alt="Plato bandera: Pescado con salsa amarilla y aguacate" loading="lazy" decoding="async"></figure>
+                                    <figure class="pb plato-3" data-id="3"><img src="./imagenes/plato_bandera_3.webp" alt="Plato bandera: Cerdo crocante con ensalada" loading="lazy" decoding="async"></figure>
+                                    <figure class="pb plato-4" data-id="4"><img src="./imagenes/plato_bandera_4.webp" alt="Plato bandera: Causa limeña con pollo y brotes" loading="lazy" decoding="async"></figure>
+                                </div>
+                            </div>
+                            <div class="dual-card card-eventos">
+    <div id="evento-carousel" class="cta-imagen cta-carousel">
+        <div class="carousel-track-container">
+            <ul class="carousel-track">
+                <li class="carousel-slide current-slide">
+                    <img class="carousel-image" src="./imagenes/wedding1.webp" alt="Boda en Jora - El Escenario Perfecto">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-image" src="./imagenes/sociocultural1.webp" alt="Evento sociocultural en Jora - El Escenario Perfecto">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-image" src="./imagenes/fiestaprivada1.webp" alt="Fiesta privada en Jora - El Escenario Perfecto">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-image" src="./imagenes/evento1.webp" alt="Evento corporativo en Jora - El Escenario Perfecto">
+                </li>
+            </ul>
+        </div>
+
+        <button class="carousel-button carousel-button--left" aria-label="Imagen anterior">❮</button>
+        <button class="carousel-button carousel-button--right" aria-label="Siguiente imagen">❯</button>
+
+        <div class="carousel-nav">
+            <button class="carousel-indicator current-slide" aria-label="Ir a imagen 1"></button>
+            <button class="carousel-indicator" aria-label="Ir a imagen 2"></button>
+            <button class="carousel-indicator" aria-label="Ir a imagen 3"></button>
+            <button class="carousel-indicator" aria-label="Ir a imagen 4"></button>
+        </div>
+    </div>
+    <div class="cta-texto">
+        <h2 class="cta-titulo">El Escenario Perfecto</h2>
+        <p class="cta-desc">Imagina tu boda, cumpleaños o reunión corporativa con la naturaleza como telón de fondo.</p>
+        <a href="eventos.html" class="btn-cta">planea tu evento</a>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider divider-from-accent">
+                    <img src="imagenes/fondo-division3.svg" alt="Divisor decorativo" class="divider-svg">
+                    <h2 class="divider-title">¡VISITANOS!</h2>
+                </div>
+
+                <section id="visitanos" class="section info-section">
+                    
+                    <div class="container container-wide info-grid-3">
+                        
+                        <div class="info-card card-horario layout-image-top-padded">
+                            <div class="info-card-image-wrapper">
+                                <img src="./imagenes/horario.webp" alt="Reloj decorativo">
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Horario de Atención</h3>
+                                <p>Visítanos y disfruta de la mejor cocina campestre. ¡Te esperamos en nuestros horarios habituales!</p>
+                                <div class="horario-list">
+                                    <p><strong>Lunes a Viernes:</strong> 12:00 pm - 10:00 pm</p>
+                                    <p><strong>Sábados y Domingos:</strong> 11:00 am - 11:00 pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card card-shows layout-image-side">
+                            <div class="info-card-image-wrapper ev-collage">
+                                <img src="./imagenes/show1.webp" alt="Músico tocando guitarra en escenario de Jora">
+                                <img src="./imagenes/show2.webp" alt="Público disfrutando show en Jora">
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Shows en Vivo</h3>
+                                <p>Disfruta de música y espectáculos variados cada fin de semana.</p>
+                                <div class="show-details">
+                                <h4>Horario:</h4>
+                                <p>Sáb y Dom - 12:00 pm a 2:00 pm</p>
+                                <h4>Shows:</h4>
+                                <ul>
+                                    <li>Infantil</li>
+                                    <li>Selvático</li>
+                                    <li>Costeño</li>
+                                    <li>Serrano</li>
+                                    <li>Caballo de Paso</li>
+                                    <li>Marinera</li>
+                                </ul>
+                            </div>
+                                <a href="shows.html" class="btn-info">Ver Cartelera</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card card-petfriendly layout-image-top-padded">
+                            <div class="info-card-image-wrapper">
+                                <img src="./imagenes/petfriendly-card.webp" alt="Perro de raza Bobtail feliz en Jora">
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Somos PetFriendly</h3>
+                                <p>¡Tus compañeros de cuatro patas son bienvenidos! Disfruten juntos de nuestras áreas verdes, bebederos y espacios adaptados para ellos.</p>
+                                <a href="granja.html" class="btn-info">Conoce nuestra granja</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider divider-from-light">
+                    <img src="imagenes/fondo-division3.svg" alt="Divisor decorativo" class="divider-svg">
+                    <h2 class="divider-title">¡CONOCENOS!</h2>
+                </div>
+
+                <section id="conocenos" class="section info-section">
+                    <div class="container container-wide info-grid-2">
+                        
+                        <div class="info-card card-nosotros layout-image-side">
+                            <div class="info-card-image-wrapper">
+                                <img src="./imagenes/nosotros-img.webp" alt="Collage del equipo y ambiente de Jora Restaurant">
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Sobre Nosotros</h3>
+                                <p>Descubre nuestra historia familiar, la pasión que nos mueve por la cocina auténtica y el profundo amor que sentimos por el valle de Pachacámac.</p>
+                                <a href="nosotros.html" class="btn-info">Conócenos</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card card-conoce layout-image-side conoce-jora-carousel-container">
+                            <div class="info-card-image-wrapper">
+                                <img src="./imagenes/conoce-jora.webp" alt="Vista aérea de las instalaciones campestres de Jora Restaurant">
+                            </div>
+                            <div class="info-card-content">
+                                <h3>Conoce Jora</h3>
+                                <p>Recorre virtualmente nuestras amplias instalaciones, explora los jardines, la zona de juegos y todos los ambientes únicos que tenemos para ti.</p>
+                                <a href="tour.html" class="btn-info">Ver Tour</a>
+                                
+                                </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider divider-from-accent">
+                    <img src="imagenes/fondo-division3.svg" alt="Divisor decorativo" class="divider-svg">
+                    <h2 class="divider-title">¡TE ESPERAMOS!</h2>
+                </div>
+
+                <section id="reserva" class="section reserva">
+                    <div class="container">
+                        <h2 class="reserva-title">Reserva</h2>
+                        <p class="reserva-desc">selecciona tu manera de reservar</p>
+                        <div class="reserva-opciones">
+                            <a href="https://wa.me/51967715165" target="_blank" class="reserva-card reserva-card-simple"><img src="./imagenes/escribenos.webp" alt="Icono chat WhatsApp" class="reserva-icon-img"><h3>WhatsApp</h3></a>
+                            <a href="cotizar_evento.html" class="reserva-card reserva-card-simple"><img src="./imagenes/formulario.webp" alt="Icono de formulario" class="reserva-icon-img"><h3>Formulario</h3></a>
+                            <a href="tel:+51970278305" class="reserva-card reserva-card-simple"><img src="./imagenes/llamanos.webp" alt="Icono de teléfono" class="reserva-icon-img"><h3>Llámanos</h3></a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <a href="https://wa.me/51967715165" target="_blank" rel="noopener" class="whatsapp-flotante" aria-label="Contactar por WhatsApp">
+                <img src="imagenes/whatsapp-flotante.webp" alt="WhatsApp">
+            </a>
+
+            <footer class="site-footer-dark">
+                <div class="container footer-grid">
+                    <div class="footer-info">
+                        <img src="./imagenes/JORALOGOMEJOR.webp" alt="Logo Jora Restaurant footer" class="footer-logo">
+                        <p>
+                            <strong>Jora Restaurante Campestre</strong> es un espacio donde la gastronomía peruana
+                            se fusiona con la naturaleza para ofrecer experiencias únicas. Ideal para familias,
+                            empresas y celebraciones especiales.
+                        </S>
+                        <h4>Contáctanos</h4>
+                        <p class="footer-contact">
+                            <a href="https://wa.me/51967715165" target="_blank" rel="noopener">
+                            <span class="icon">💬</span> 967 715 165
+                            </a><br>
+                            <a href="mailto:Jorarestaurante1@gmail.com">
+                            <span class="icon">📧</span> Jorarestaurante1@gmail.com
+                            </a>
+                        </p>
+                        <h4>Síguenos</h4>
+                        <div class="footer-social">
+                            <a href="#" aria-label="TikTok"><img src="./imagenes/tiktok.webp" alt="TikTok Jora"></a>
+                            <a href="#" aria-label="Instagram"><img src="./imagenes/ig.webp" alt="Instagram Jora"></a>
+                            <a href="#" aria-label="YouTube"><img src="imagenes/youtube.webp" alt="YouTube Jora"></a>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Explora</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#platos">Restaurante</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="reserva.html">Reserva</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                        </ul>
+                        <ul class="footer-legal">
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li>
+                                <a href="#">Libro de Reclamaciones</a>
+                                <img src="./imagenes/librodereclamaciones.webp" alt="Icono Libro de Reclamaciones Perú" class="footer-libro">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact-form">
+                        <h4>Contáctanos</h4>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="footer-name">Nombre:</label>
+                                <input type="text" id="footer-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footer-email">Correo:</label>
+                                <input type="email" id="footer-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footer-message">Mensaje:</label>
+                                <textarea id="footer-message" name="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-footer-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© <span id="year"></span> Jora Restaurant. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </main>
+
+        <script>
+          // Script simple para actualizar el año del copyright
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

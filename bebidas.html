@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Carta de Bebidas - Jora Restaurant</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/bebidas.css" /> 
+
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        
+        <header class="site-header">
+            <div class="container header-inner">
+        
+                <div class="header-col-left"> 
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@jorarestaurante" aria-label="TikTok Jora" target="_blank"><img src="imagenes/tiktok.webp" alt="TikTok"></a>
+                        <a href="https://www.instagram.com/jorarestaurante/?hl=es" aria-label="Instagram Jora" target="_blank"><img src="imagenes/ig.webp" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/p/Jora-Restaurante-100068304454260/?locale=es_LA" aria-label="Facebook Jora" target="_blank"><img src="imagenes/ig.webp" alt="Facebook"></a>
+                        <a href="#" aria-label="YouTube Jora" target="_blank"><img src="imagenes/youtube.webp" alt="YouTube"></a>
+                    </div>
+                    <span class="nav-separator"></span>
+                    <nav class="primary-nav-desktop-left" aria-label="Navegación izquierda"> 
+                        <ul>
+                            <li><a href="index.html#inicio">Inicio</a></li>
+                            <li><a href="index.html#visitanos">Shows</a></li>
+                            <li><a href="index.html#conocenos">Nosotros</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        
+                <a class="logo" href="index.html#inicio" aria-label="Jora Restaurant - Ir a inicio">
+                    <img src="imagenes/JORALOGOMEJOR.webp" alt="Logo de Jora Restaurant Campestre" width="260" height="76" />
+                </a>
+                
+                <div class="header-col-right">
+                    <nav class="primary-nav-desktop-right" aria-label="Navegación derecha"> 
+                        <ul>
+                            <li><a href="eventos.html">Evento</a></li>
+                            <li><a href="shows.html">Show</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                        </ul>
+                    </nav>
+                    <span class="nav-separator"></span>
+                    <div class="header-ctas">
+                        <a href="index.html#reserva" class="nav-cta nav-cta-reserva"> 
+                            <img src="imagenes/reserva.webp" alt="Reservar">
+                            <span>Reserva</span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/1N38ejmfC8MJ4Jpj9" target="_blank" rel="noopener noreferrer" class="nav-cta nav-cta-ubicanos">
+                            <img src="imagenes/ubi.webp" alt="Ubicación">
+                            <span>Ubicanos</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav id="primary-nav-mobile" class="primary-nav-mobile" aria-label="Navegación principal móvil">
+                    <ul>
+                        <li><a href="#sin-alcohol">Sin Alcohol</a></li>
+                        <li><a href="#alcoholicas">Alcohólicas</a></li>
+                        <li><a href="#comerciales">Comerciales</a></li>
+                        <li><a href="#calientes">Calientes</a></li>
+                        <li><a href="#vinos">Vinos</a></li>
+                        <li><a href="comida.html">Ver Comida</a></li>
+                        
+                        <li class="mobile-nav-separator"><a href="index.html#inicio">Volver a Inicio</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-controls="primary-nav-mobile" aria-expanded="false" aria-label="Abrir menú" type="button">
+                    <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+                </button>
+                
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="bebidas-hero" id="bebidas-top">
+                <div class="container">
+                    <h1 class="hero-title">Nuestra Barra</h1>
+                    <p class="hero-desc">¡Descarga nuestras cartas!</p>
+                    <div class="hero-buttons">
+                        <a href="./archivos/CARTA_BEBIDAS.pdf" download class="btn-cta btn-carta-download">Carta de Bebidas</a>
+                        <a href="./archivos/CARTA_COMIDA.pdf" download class="btn-cta btn-carta-download btn-carta-comida">Carta de Comida</a>
+                    </div>
+                </div>
+            </section>
+            
+            <nav class="bebidas-nav" aria-label="Navegación de categorías">
+                <div class="container nav-container">
+                    <ul class="nav-list">
+                        <li><a href="#sin-alcohol">Sin alcohol</a></li>
+                        <li><a href="#comerciales">Comerciales</a></li>
+                        <li><a href="#alcoholicas">Alcoholicas</a></li>
+                        <li><a href="#calientes">Calientes</a></li>
+                        <li><a href="#vinos">Vinos</a></li>
+                        <li class="nav-right-align"><a href="comida.html" class="nav-cta-bebidas">Ver Comida</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="single-background-area">
+                
+                <section id="sin-alcohol" class="section bebidas-seccion section-bg-light">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                            <h2 class="section-title title-sin-alcohol">Sin Alcohol</h2>
+                        </div>
+                        
+                        <h3 class="subtitle">Bebidas Frías</h3>
+                        <div class="bebidas-grid grid-bebidas-frias">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Chicha de Jora" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Chicha de Jora</h4></div><p class="card-desc">Jarra: S/ 25.00 | Vaso: S/ 12.00</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Chicha Morada" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Chicha Morada</h4></div><p class="card-desc">Jarra: S/ 20.00 | Vaso: S/ 8.00</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Maracuyá" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Maracuyá</h4></div><p class="card-desc">Jarra: S/ 20.00 | Vaso: S/ 8.00</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Limonada Clásica" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Limonada Clásica</h4></div><p class="card-desc">Jarra: S/ 18.00 | Vaso: S/ 8.00</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Limonada Green" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Limonada Green</h4></div><p class="card-desc">Jarra: S/ 20.00 | Vaso: S/ 8.00</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Limonada Pink" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Limonada Pink</h4></div><p class="card-desc">Jarra: S/ 20.00 | Vaso: S/ 8.00</p></div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="subtitle">Sodas Tropicales</h3>
+                        <div class="bebidas-grid grid-sodas">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Maracu-Mango" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Maracu-Mango</h4><p class="card-price">S/ 14.00</p></div><p class="card-desc">Pulpa de mango, jugo de maracuyá y ginger ale.</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Tuntuna" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Tuntuna</h4><p class="card-price">S/ 14.00</p></div><p class="card-desc">Tuna roja, limón, syrup y ginger ale.</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Orange Power" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Orange Power</h4><p class="card-price">S/ 14.00</p></div><p class="card-desc">Jugo de naranja, syrup de frutos rojos y ginger ale.</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Fresa Montesa" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Fresa Montesa</h4><p class="card-price">S/ 14.00</p></div><p class="card-desc">Pulpa de fresa, limón syrup de frutos rojos y ginger ale.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="alcoholicas" class="section bebidas-seccion">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                            <h2 class="section-title title-alcoholicas">Alcohólicas</h2>
+                        </div>
+                        
+                        <h3 class="subtitle">Creativos</h3>
+                        <div class="bebidas-grid grid-creativos">
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Malco de Jora" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Malco de Jora</h4><p class="card-price">S/ 26.00</p></div><p class="card-desc">Ron jamaiquino y cubano, crema de coco y maracuyá.</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Jora Punch" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Jora Punch</h4><p class="card-price">S/ 25.00</p></div><p class="card-desc">Pisco, masco, zumo de arándanos, mix de miel de la casa.</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Holiday" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Holiday</h4><p class="card-price">S/ 28.00</p></div><p class="card-desc">Vodka, crema de coco, jugo de naranja, piña, menta y kiuri.</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Tropicana" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Tropicana</h4><p class="card-price">S/ 26.00</p></div><p class="card-desc">Ron cubano, triple sec, menta, cedrón, kiwi y mango.</p></div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="subtitle">Clásicos</h3>
+                        <div class="bebidas-grid grid-clasicos">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Mojito" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Mojito</h4><p class="card-price">S/ 25.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Piña Colada" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Piña Colada</h4><p class="card-price">S/ 26.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Daiquiri" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Daiquiri</h4><p class="card-price">S/ 24.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Algarrobina" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Algarrobina</h4><p class="card-price">S/ 25.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Gin Tonic" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Gin Tonic</h4><p class="card-price">S/ 28.00</p></div></div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="subtitle">Digestivos</h3>
+                        <div class="bebidas-grid grid-digestivos">
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Anis Najar" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Anis Najar</h4><p class="card-price">S/ 15.00</p></div><p class="card-desc">Shot de licor de anís.</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Kahlúa" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Kahlúa</h4><p class="card-price">S/ 21.00</p></div><p class="card-desc">Shot de licor de café.</p></div>
+                            </div>
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Cointreau" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Cointreau</h4><p class="card-price">S/ 26.00</p></div><p class="card-desc">Shot de licor de naranja.</p></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Shot de licor de naranja" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Shot de licor de naranja</h4><p class="card-price">S/ 21.00</p></div></div>
+                            </div>
+                        </div>
+
+                        <h3 class="subtitle">Chilcano & Sours</h3>
+                        <div class="bebidas-grid grid-chilcanos">
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Clásico" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Clásico</h4><p class="card-price">S/ 25.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Maracuyá" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Maracuyá</h4><p class="card-price">S/ 25.00</p></div></div>
+                            </div>
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Especial" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Especial</h4><p class="card-price">S/ 35.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Macerados en Casa" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Macerados en Casa</h4><p class="card-price">S/ 29.00</p></div><p class="card-desc">Arándanos, Aguaymanto, Frutos rojos, Coca, Canela, Hierba Luisa y otros.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="comerciales" class="section bebidas-seccion section-bg-light">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                             <h2 class="section-title title-comerciales">Comerciales</h2>
+                        </div>
+                        <h3 class="subtitle">Cervezas</h3>
+                        <div class="bebidas-grid grid-cervezas">
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Cusqueña" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Cusqueña</h4><p class="card-price">S/ 10.00</p></div><p class="card-desc">Dorada, trigo y negra.</p></div>
+                            </div>
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Stella Artois" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Stella Artois</h4><p class="card-price">S/ 14.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Corona" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Corona</h4><p class="card-price">S/ 14.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Artesanal" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Artesanal</h4><p class="card-price">S/ 16.00</p></div><p class="card-desc">Craftsman.</p></div>
+                            </div>
+                        </div>
+                        <h3 class="subtitle">Gaseosas</h3>
+                        <div class="bebidas-grid grid-gaseosas">
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Coca Cola" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Coca Cola</h4><p class="card-price">S/ 8.00</p></div></div>
+                            </div>
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Inca Kola" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Inca Kola</h4><p class="card-price">S/ 8.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Agua San Mateo" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Agua San Mateo</h4><p class="card-price">S/ 5.00</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="calientes" class="section bebidas-seccion">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                            <h2 class="section-title title-calientes">Bebidas Calientes</h2>
+                        </div>
+                        <div class="bebidas-grid grid-calientes">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Emoliente" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Emoliente</h4><p class="card-price">S/ 12.00</p></div><p class="card-desc">Tradicional, piña, aguaymanto y maracuyá.</p></div>
+                            </div>
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Mate 500 ml" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Mate 500 ml</h4><p class="card-price">S/ 16.00</p></div><p class="card-desc">Hierba luisa, muña, cedrón, manzanilla.</p></div>
+                            </div>
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Infusiones" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Infusiones</h4><p class="card-price">S/ 7.00</p></div><p class="card-desc">Anís, hierba luisa, manzanilla, té puro, menta y muña.</p></div>
+                            </div>
+                             <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Café Selecto" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Café Selecto</h4><p class="card-price">S/ 12.00</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="vinos" class="section bebidas-seccion section-bg-light">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                            <h2 class="section-title title-vinos">Vinos</h2>
+                        </div>
+
+                        <h3 class="subtitle">Intipalka</h3>
+                        <div class="bebidas-grid grid-vinos">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Malbec" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Malbec</h4><p class="card-price">S/ 65.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Syrah" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Syrah</h4><p class="card-price">S/ 65.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Malbec-Merlot" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Malbec-Merlot</h4><p class="card-price">S/ 79.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Malbec 375 ml" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Malbec 375 ml</h4><p class="card-price">S/ 38.00</p></div></div>
+                            </div>
+                        </div>
+
+                        <h3 class="subtitle">Marqués de Riscal</h3>
+                        <div class="bebidas-grid grid-vinos">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Syrah y Tempranillo" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Syrah y Tempranillo</h4><p class="card-price">S/ 89.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Verdejo" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Verdejo</h4><p class="card-price">S/ 89.00</p></div></div>
+                            </div>
+                        </div>
+
+                        <h3 class="subtitle">Nieto Senetier</h3>
+                        <div class="bebidas-grid grid-vinos">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Cabernet Sauvignon" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Cabernet Sauvignon</h4><p class="card-price">S/ 95.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Malbec" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Malbec</h4><p class="card-price">S/ 95.00</p></div></div>
+                            </div>
+                        </div>
+
+                        <h3 class="subtitle">Casillero del Diablo</h3>
+                        <div class="bebidas-grid grid-vinos">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Cabernet Sauvignon" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Cabernet Sauvignon</h4><p class="card-price">S/ 75.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Malbec" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Malbec</h4><p class="card-price">S/ 75.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Carmenere" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Carmenere</h4><p class="card-price">S/ 75.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Red Blend" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Red Blend</h4><p class="card-price">S/ 89.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Merlot" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Merlot</h4><p class="card-price">S/ 79.00</p></div></div>
+                            </div>
+                        </div>
+
+                        <h3 class="subtitle">Estancia Mendoza</h3>
+                        <div class="bebidas-grid grid-vinos">
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Cabernet Sauvignon" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Cabernet Sauvignon</h4><p class="card-price">S/ 65.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Chardonnay" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Chardonnay</h4><p class="card-price">S/ 65.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Merlot-Malbec" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Merlot-Malbec</h4><p class="card-price">S/ 60.00</p></div></div>
+                            </div>
+                            <div class="bebidas-card">
+                                <img src="./imagenes/bebida-ejemplo.png" alt="Cabernet-Malbec" class="bebida-card-img">
+                                <div class="card-content"><div class="card-header"><h4 class="card-title">Cabernet-Malbec</h4><p class="card-price">S/ 60.00</p></div></div>
+                            </div>
+                        </div>
+
+                        <p class="descorche-note">Descorche: S/ 39.00</p>
+
+                    </div>
+                </section>
+
+            </div>
+            <a href="https://wa.me/51967715165" target="_blank" rel="noopener" class="whatsapp-flotante" aria-label="Contactar por WhatsApp">
+                <img src="imagenes/whatsapp-flotante.webp" alt="WhatsApp">
+            </a>
+
+            <footer class="site-footer-dark">
+                <div class="container footer-grid">
+                    <div class="footer-info">
+                        <img src="./imagenes/JORALOGOMEJOR.webp" alt="Logo Jora Restaurant footer" class="footer-logo">
+                        <p>
+                            <strong>Jora Restaurante Campestre</strong> es un espacio donde la gastronomía peruana
+                            se fusiona con la naturaleza para ofrecer experiencias únicas. Ideal para familias,
+                            empresas y celebraciones especiales.
+                        </S>
+                        <h4>Contáctanos</h4>
+                        <p class="footer-contact">
+                            <a href="https://wa.me/51967715165" target="_blank" rel="noopener">
+                            <span class="icon">💬</span> 967 715 165
+                            </a><br>
+                            <a href="mailto:Jorarestaurante1@gmail.com">
+                            <span class="icon">📧</span> Jorarestaurante1@gmail.com
+                            </a>
+                        </p>
+                        <h4>Síguenos</h4>
+                        <div class="footer-social">
+                            <a href="#" aria-label="TikTok"><img src="./imagenes/tiktok.webp" alt="TikTok Jora"></a>
+                            <a href="#" aria-label="Instagram"><img src="./imagenes/ig.webp" alt="Instagram Jora"></a>
+                            <a href="#" aria-label="YouTube"><img src="imagenes/youtube.webp" alt="YouTube Jora"></a>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Explora</h4>
+                        <ul>
+                            <li><a href="index.html#inicio">Inicio</a></li>
+                            <li><a href="index.html#platos">Restaurante</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="index.html#reserva">Reserva</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                        </ul>
+                        <ul class="footer-legal">
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li>
+                                <a href="#">Libro de Reclamaciones</a>
+                                <img src="./imagenes/librodereclamaciones.webp" alt="Icono Libro de Reclamaciones Perú" class="footer-libro">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact-form">
+                        <h4>Contáctanos</h4>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="footer-name">Nombre:</label>
+                                <input type="text" id="footer-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footer-email">Correo:</label>
+                                <input type="email" id="footer-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footer-message">Mensaje:</label>
+                                <textarea id="footer-message" name="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-footer-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© <span id="year"></span> Jora Restaurant. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </main>
+
+        <script>
+          // Script simple para actualizar el año del copyright
+          document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

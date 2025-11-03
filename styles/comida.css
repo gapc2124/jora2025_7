@@ -1,0 +1,584 @@
+/* =========================
+   JORA — Estilos específicos para comida.html (FINAL)
+   ========================= */
+
+/* REQ: Fondo de página ligeramente más oscuro */
+.single-background-area {
+    background-color: #EAEAEA; 
+}
+
+/* Aseguramos que el padding superior sea correcto ya que no hay carrusel */
+#main-content {
+    padding-top: var(--header-h-scrolled); 
+}
+
+/* Scroll-padding para el header pegajoso (Solución al solapamiento) */
+html {
+    scroll-padding-top: calc(var(--header-h-scrolled) + 20px); 
+}
+@media (max-width: 1050px) {
+    html {
+        scroll-padding-top: 100px; 
+    }
+}
+/* Aseguramos que el header superior tenga un fondo blanco para el scroll en comida.html */
+.site-header {
+    background-color: var(--surface) !important;
+}
+
+/* -------------------------
+   Hero de la Carta (AJUSTADO)
+   ------------------------- */
+.comida-hero {
+    background-color: #6f402f; 
+    background-image: none !important; 
+    padding: var(--spacing-xl) 0; 
+    text-align: center;
+    color: #fff;
+    box-shadow: inset 0 -5px 10px rgba(0,0,0,0.25); 
+    margin-top: 30px; 
+    margin-bottom: 0;
+}
+.hero-title {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.hero-desc {
+    font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto 25px;
+    line-height: 1.5;
+    color: #f0f0f0;
+    text-align: center;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px; 
+}
+.btn-carta-download {
+    background: var(--color-primary);
+    color: var(--color-text);
+    padding: 14px 40px;
+}
+.btn-carta-download:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+/* ----------------------------------------------------
+   Navegación de Categorías (SOLUCIÓN DEFINITIVA)
+   ---------------------------------------------------- */
+.comida-nav {
+    background-color: var(--surface);
+    /* REQ: Altura de la caja (padding) */
+    padding: 30px 0; 
+    position: sticky; 
+    top: calc(var(--header-h-scrolled) - 1px); 
+    z-index: 50;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+    /* REQ: Permitir que la caja crezca si los ítems se envuelven */
+    overflow: visible; 
+    
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor principal de los enlaces */
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    /* REQ: Quitar cualquier overflow que corte los elementos */
+    overflow: visible; 
+}
+
+/* REQ: SOLUCIÓN DE ENVOLTURA (FLEX-WRAP) */
+.nav-list {
+    display: flex;
+    /* REQ: PERMITIR QUE LOS ENLACES BAJEN A OTRA LÍNEA */
+    flex-wrap: wrap; 
+    /* REQ: Centrar los enlaces horizontalmente */
+    justify-content: center; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0; 
+    /* REQ: Espacio entre enlaces (vertical y horizontal) */
+    gap: 10px 15px; 
+}
+
+/* REQ: PADDING IDÉNTICO PARA TODOS LOS ENLACES */
+.nav-list a {
+    font-family: var(--font-3);
+    font-weight: 600;
+    font-size: 1.1rem; 
+    color: var(--color-text);
+    
+    /* Padding generoso (SOLUCIÓN AL CORTE VERTICAL) */
+    padding: 15px 18px; 
+    
+    border-radius: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative; 
+    
+    /* REQ: NO DEJAR QUE SE ENCOJA O CREZCA */
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    
+    border-bottom: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* REQ: Subrayado animado (pseudo-elemento) */
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 5px; /* Posicionado 5px desde abajo (mucho espacio) */
+    left: 20%; 
+    width: 60%; 
+    height: 3px;
+    background-color: var(--color-secondary);
+    border-radius: 2px;
+    
+    /* REQ: ANIMACIÓN (invisible por defecto) */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+}
+
+/* REQ: Animación Activa (Scroll Spy) */
+.nav-list a.active { 
+    background-color: transparent; 
+    color: var(--color-secondary); 
+    font-weight: 700;
+    border-bottom: none; 
+    padding-bottom: 15px; /* Aseguramos padding consistente */
+}
+.nav-list a.active::after {
+    transform: scaleX(1); /* Subrayado visible */
+}
+
+/* REQ: Animación en Hover */
+.nav-list a:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+    text-decoration: none;
+    border-bottom: none; 
+}
+.nav-list a:hover::after {
+     transform: scaleX(1); /* Subrayado visible en hover */
+}
+
+
+/* Botón "Bebidas" (ahora solo cambia el fondo) */
+.nav-cta-bebidas {
+    font-size: 1.2rem; 
+    font-weight: 700;
+    background-color: var(--color-primary) !important; 
+    color: var(--color-black) !important;
+    
+    /* REQ: PADDING IDÉNTICO AL RESTO (SOLUCIÓN AL CORTE VERTICAL) */
+    padding: 15px 25px; /* Más padding horizontal para destacar */
+    
+    transform: none; /* ELIMINAR TRANSFORM (SOLUCIÓN AL CORTE) */
+    box-shadow: var(--shadow-1);
+    flex-shrink: 0;
+}
+.nav-cta-bebidas:hover {
+    background-color: var(--color-secondary) !important; 
+    color: #fff !important;
+    transform: none; 
+}
+/* Estado activo de Bebidas (solo cambia color de fondo) */
+.nav-cta-bebidas.active { 
+     background-color: var(--color-secondary) !important; 
+     color: #fff !important; 
+     font-weight: 700;
+     border-bottom: none; 
+     padding-bottom: 15px;
+}
+/* Bebidas NO tiene subrayado (::after) */
+.nav-cta-bebidas::after,
+.nav-cta-bebidas:hover::after,
+.nav-cta-bebidas.active::after {
+    content: none !important;
+}
+
+
+/* -------------------------
+   Estructura de Contenido y Subtítulos
+   ------------------------- */
+.comida-seccion {
+    padding: var(--spacing-l) 0;
+}
+.highlight-title-box {
+    background-color: transparent; 
+    border: 4px dotted var(--color-secondary); 
+    border-radius: var(--radius-md); 
+    max-width: 600px;
+    margin: 0 auto var(--spacing-l) auto; 
+    padding: 8px 15px; 
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 0; 
+    color: var(--color-secondary); 
+    position: relative;
+    padding-bottom: 12px; 
+    padding-top: 5px;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 4px; 
+    background: var(--color-secondary); 
+    border-radius: 2px;
+}
+
+.section-desc {
+    text-align: justify; 
+    max-width: 800px; 
+    margin: 0 auto 20px;
+    font-style: italic;
+    font-size: 1.05rem;
+}
+
+.subtitle {
+    font-family: var(--font-3);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text); 
+    text-align: center;
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-m);
+    padding: 0 10px;
+    position: relative;
+}
+.subtitle::after {
+    content: '';
+    display: block;
+    width: 60px; 
+    height: 3px;
+    background: var(--color-primary); 
+    margin: 8px auto 0;
+    border-radius: 50px;
+}
+
+/* -------------------------
+   Grid de Comida (Platos)
+   ------------------------- */
+.comida-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-l);
+    max-width: 1200px;
+    margin: 0 auto var(--spacing-l); 
+}
+
+.comida-card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.comida-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2);
+}
+
+.comida-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-title {
+    color: var(--color-black);
+    font-family: var(--font-2);
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+/* Texto de tarjeta justificado */
+.card-desc {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.card-price {
+    font-family: var(--font-3);
+    font-weight: 700;
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+    margin-top: auto;
+    text-align: right;
+}
+
+/* Estilo para tarjetas especiales */
+.card-destacado {
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-destacado .card-content {
+    padding: 40px 20px; 
+}
+.card-destacado .card-title {
+    color: var(--color-black);
+    font-size: 1.6rem;
+    text-align: center;
+}
+.card-destacado .card-desc, .card-destacado .card-price {
+    color: var(--color-text);
+    text-align: center;
+}
+.card-destacado .card-price {
+    color: var(--color-secondary);
+}
+
+/* Estilos para la caja de descripción de Parrilla */
+.parrilla-info-box {
+    background-color: var(--surface); 
+    border-radius: var(--radius-md); 
+    box-shadow: var(--shadow-1); 
+    padding: var(--spacing-l); 
+    max-width: 900px; 
+    margin: 0 auto var(--spacing-l) auto; 
+    text-align: center;
+}
+.parrilla-info-box .section-desc {
+    font-style: normal; 
+    font-weight: 500;
+    margin-bottom: 0;
+    color: var(--color-text);
+    max-width: 100%; 
+    text-align: center !important; 
+}
+
+/* Estilos para Petfriendly */
+.opcion-petfriendly {
+    background: var(--color-bg);
+    border: 1px dashed var(--color-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-l);
+    margin-top: var(--spacing-xl);
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.petfriendly-icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+}
+.opcion-petfriendly h2, .title-petfriendly {
+    color: var(--color-secondary);
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+}
+.opcion-petfriendly h2::after, .title-petfriendly::after {
+    display: none;
+}
+/* Texto justificado en Petfriendly */
+.petfriendly-desc {
+    font-size: 1rem;
+    color: var(--color-text);
+    text-align: justify;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+/* Ajuste de color de títulos en secciones claras */
+.title-parrilla, .title-ninos, .title-guarniciones {
+    color: var(--color-black); 
+}
+
+
+/* -------------------------
+   AJUSTES EN MEDIA QUERIES
+   ------------------------- */
+   
+.section-divider {
+    display: none !important;
+}
+
+/* AJUSTE PARA TABLETS (601px a 1050px) */
+@media (min-width: 601px) and (max-width: 1050px) {
+    /* CORRECCIÓN DEFINITIVA DEL HUECO SUPERIOR: Establecer a 0 */
+    #main-content {
+        padding-top: 0 !important;
+    }
+    
+    .comida-hero {
+        padding-top: 30px; 
+        padding-bottom: 30px;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .comida-nav {
+        top: 0; 
+        position: relative; 
+    }
+    .comida-seccion .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* AJUSTES MODO CELULAR (<= 600px) */
+@media (max-width: 600px) {
+    .comida-hero {
+        padding: 20px 0; 
+        margin-bottom: 0; 
+        margin-top: 0;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-desc {
+        font-size: 1rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+    .hero-buttons .btn-cta {
+        width: 80%;
+        font-size: 1.15rem; 
+        text-align: center;
+        padding: 16px 20px; 
+        padding-bottom: 16px; 
+    }
+
+    /* Ocultar NAV de Comida en Móvil */
+    .comida-nav {
+        display: none !important;
+    }
+    /* Estilo para el separador en el menú hamburguesa */
+    .primary-nav-mobile .mobile-nav-separator {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .comida-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-m); 
+    }
+    
+    /* DISEÑO DE TARJETA EN MÓVIL */
+    .comida-card {
+        flex-direction: row; 
+    }
+    .comida-img {
+        width: 50%; 
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        flex-shrink: 0;
+    }
+    .card-content {
+        width: 50%; 
+        padding: 15px; 
+        justify-content: center; 
+    }
+    .card-desc {
+        display: none; 
+    }
+    .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .card-price {
+        font-size: 1.1rem;
+        text-align: left; 
+        margin-top: 0;
+    }
+    
+    /* AJUSTES PARA SUBTÍTULOS */
+    .subtitle {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    /* Texto justificado se ve mal en móvil, forzar a 'left' */
+    .section-desc,
+    .petfriendly-desc {
+        text-align: left;
+    }
+    
+    /* Caja punteada más fina en móvil */
+    .highlight-title-box {
+        margin: 0 auto 20px auto;
+        padding: 5px 10px;
+        border-width: 3px; 
+    }
+    
+    .section-title::after {
+        width: 80px;
+    }
+
+    /* Ajuste para tarjetas que no tienen imagen */
+    .comida-card.card-destacado:not(:has(img)),
+    .grid-guarniciones .comida-card:not(:has(img)) {
+        flex-direction: column !important;
+    }
+    .comida-card.card-destacado:not(:has(img)) .card-content,
+    .grid-guarniciones .comida-card:not(:has(img)) .card-content {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .comida-card.card-destacado:not(:has(img)) .card-title,
+    .grid-guarniciones .comida-card:not(:has(img)) .card-title {
+        text-align: center;
+    }
+    .comida-card.card-destacado:not(:has(img)) .card-price,
+    .grid-guarniciones .comida-card:not(:has(img)) .card-price {
+        text-align: center;
+    }
+}
+
+/* CORRECCIÓN FINAL: Asegurar que el padding del main sea 0 en tablets y móviles */
+@media (max-width: 1050px) {
+    #main-content {
+        padding-top: 0 !important;
+    }
+}

@@ -1,0 +1,516 @@
+/* =========================
+   JORA — Estilos específicos para bebidas.html
+   ========================= */
+
+/* Colores para los puntos de los títulos de sección y subtítulos */
+:root {
+    --color-dot-vinos: #6a1b9a;      /* Morado oscuro */
+    --color-dot-sin-alcohol: #2e7d32; /* Verde oscuro */
+    --color-dot-alcoholicas: #212121; /* Negro */
+    --color-dot-calientes: #d81b60;  /* Rosa fuerte */
+    --color-dot-comerciales: #fbc02d; /* Amarillo oscuro */
+}
+
+/* Fondo de página */
+.single-background-area {
+    background-color: #EAEAEA; 
+}
+
+#main-content {
+    padding-top: var(--header-h-scrolled); 
+}
+
+/* Scroll-padding para el header pegajoso */
+html {
+    scroll-padding-top: calc(var(--header-h-scrolled) + 20px); 
+}
+@media (max-width: 1050px) {
+    html {
+        scroll-padding-top: 100px; 
+    }
+}
+.site-header {
+    background-color: var(--surface) !important;
+}
+
+/* -------------------------
+   Hero de la Carta
+   ------------------------- */
+.bebidas-hero {
+    background-color: #6f402f; 
+    background-image: none !important; 
+    padding: var(--spacing-xl) 0; 
+    text-align: center;
+    color: #fff;
+    box-shadow: inset 0 -5px 10px rgba(0,0,0,0.25); 
+    margin-top: 30px; 
+    margin-bottom: 0;
+}
+.hero-title {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.hero-desc {
+    font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto 25px;
+    line-height: 1.5;
+    color: #f0f0f0;
+    text-align: center;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+.btn-carta-download {
+    background: var(--color-primary);
+    color: var(--color-text);
+    padding: 14px 40px;
+    border: 2px solid transparent; 
+}
+.btn-carta-download:hover {
+    background: #fff;
+    color: var(--color-black);
+    transform: translateY(-2px);
+    border-color: var(--color-primary); 
+}
+/* Ambos botones de descarga tienen el mismo estilo */
+.btn-carta-comida {
+    background: var(--color-primary); 
+    color: var(--color-text);
+}
+.btn-carta-comida:hover {
+    background: #fff;
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
+
+/* ----------------------------------------------------
+   Navegación de Categorías 
+   ---------------------------------------------------- */
+.bebidas-nav {
+    background-color: var(--surface);
+    padding: 30px 0; 
+    position: sticky; 
+    top: calc(var(--header-h-scrolled) - 1px); 
+    z-index: 50;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: visible; 
+    display: flex;
+    align-items: center;
+}
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: visible; 
+}
+.nav-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0; 
+    gap: 10px 15px; 
+}
+.nav-list a {
+    font-family: var(--font-3);
+    font-weight: 600;
+    font-size: 1.1rem; 
+    color: var(--color-text);
+    padding: 15px 18px; 
+    border-radius: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative; 
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    border-bottom: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 20%; 
+    width: 60%; 
+    height: 3px;
+    background-color: var(--color-secondary);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+}
+.nav-list a.active { 
+    background-color: transparent; 
+    color: var(--color-secondary); 
+    font-weight: 700;
+    border-bottom: none; 
+    padding-bottom: 15px;
+}
+.nav-list a.active::after {
+    transform: scaleX(1); 
+}
+.nav-list a:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+    text-decoration: none;
+    border-bottom: none; 
+}
+.nav-list a:hover::after {
+     transform: scaleX(1);
+}
+
+/* Posiciona "Ver Comida" a la derecha */
+.nav-list .nav-right-align {
+    margin-left: auto; 
+    display: flex; 
+    align-items: center;
+}
+.nav-cta-bebidas {
+    font-size: 1.2rem; 
+    font-weight: 700;
+    background-color: var(--color-primary) !important; 
+    color: var(--color-black) !important;
+    padding: 15px 25px; 
+    transform: none; 
+    box-shadow: var(--shadow-1);
+    flex-shrink: 0;
+    border: 2px solid transparent; 
+}
+.nav-cta-bebidas:hover {
+    background-color: var(--color-secondary) !important; 
+    color: #fff !important;
+    transform: none; 
+    border-color: var(--color-primary); 
+}
+.nav-cta-bebidas.active { 
+     background-color: var(--color-secondary) !important; 
+     color: #fff !important; 
+     font-weight: 700;
+     border-bottom: none; 
+     padding-bottom: 15px;
+     border-color: var(--color-primary);
+}
+.nav-cta-bebidas::after,
+.nav-cta-bebidas:hover::after,
+.nav-cta-bebidas.active::after {
+    content: none !important;
+}
+
+/* -------------------------
+   Estructura de Contenido y Subtítulos
+   ------------------------- */
+.bebidas-seccion {
+    padding: var(--spacing-l) 0;
+}
+
+/* === APLICACIÓN DE COLORES A BORDES PUNTEADOS (highlight-title-box) === */
+.highlight-title-box {
+    background-color: transparent; 
+    border: 4px dotted var(--color-secondary); /* Color por defecto, ajustado por sección */
+    border-radius: var(--radius-md); 
+    max-width: 600px;
+    margin: 0 auto var(--spacing-l) auto; 
+    padding: 8px 15px; 
+    text-align: center;
+}
+.highlight-title-box:has(.title-vinos) { border-color: var(--color-dot-vinos); }
+.highlight-title-box:has(.title-sin-alcohol) { border-color: var(--color-dot-sin-alcohol); }
+.highlight-title-box:has(.title-alcoholicas) { border-color: var(--color-dot-alcoholicas); }
+.highlight-title-box:has(.title-calientes) { border-color: var(--color-dot-calientes); }
+.highlight-title-box:has(.title-comerciales) { border-color: var(--color-dot-comerciales); }
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 0; 
+    color: var(--color-secondary); 
+    position: relative;
+    padding-bottom: 12px; 
+    padding-top: 5px;
+}
+/* El subrayado del título principal (::after) usa el color por defecto (var(--color-secondary)) */
+.section-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 4px; 
+    background: var(--color-secondary); 
+    border-radius: 2px;
+}
+
+/* Colores de los puntos (subrayados) para los Títulos de Sección (solo para referencias) */
+/* NOTA: Estos se aplicarán al h2 (section-title), pero el requerimiento es para el h3 (subtitle) */
+/* .title-vinos::after { background: var(--color-dot-vinos); }
+.title-sin-alcohol::after { background: var(--color-dot-sin-alcohol); }
+.title-alcoholicas::after { background: var(--color-dot-alcoholicas); }
+.title-calientes::after { background: var(--color-dot-calientes); }
+.title-comerciales::after { background: var(--color-dot-comerciales); } */
+
+
+.subtitle {
+    font-family: var(--font-3);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text); 
+    text-align: center;
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-m);
+    padding: 0 10px;
+    position: relative;
+}
+/* === APLICACIÓN DE COLORES A SUBRAYADOS DE SUBTÍTULOS MENORES (subtitle::after) === */
+/* Se utiliza el selector de padre para aplicar el color al subrayado del h3 */
+#vinos .subtitle::after { background: var(--color-dot-vinos); }
+#sin-alcohol .subtitle::after { background: var(--color-dot-sin-alcohol); }
+#alcoholicas .subtitle::after { background: var(--color-dot-alcoholicas); }
+#calientes .subtitle::after { background: var(--color-dot-calientes); }
+#comerciales .subtitle::after { background: var(--color-dot-comerciales); }
+
+.subtitle::after {
+    content: '';
+    display: block;
+    width: 60px; 
+    height: 3px;
+    background: var(--color-primary); /* Color por defecto */
+    margin: 8px auto 0;
+    border-radius: 50px;
+}
+
+/* -------------------------
+   Grid de Bebidas (Tarjetas de Texto con Imagen)
+   ------------------------- */
+.bebidas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-l);
+    max-width: 1200px;
+    margin: 0 auto var(--spacing-l); 
+}
+
+.bebidas-card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.bebidas-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2);
+}
+
+.bebida-card-img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    display: block;
+    border-bottom: 3px solid var(--color-primary); 
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.card-title {
+    color: var(--color-black);
+    font-family: var(--font-2);
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+.card-desc {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+.card-price {
+    font-family: var(--font-3);
+    font-weight: 700;
+    color: var(--color-secondary);
+    font-size: 1.25rem;
+    margin-top: 0;
+    text-align: right;
+    flex-shrink: 0;
+}
+/* Estilo especial para tarjetas con precios múltiples (Bebidas Frías) */
+.grid-bebidas-frias .card-desc {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+    text-align: left;
+    margin-top: 4px;
+}
+
+/* Nota de Descorche */
+.descorche-note {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-top: var(--spacing-l);
+    padding: 15px;
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--shadow-1);
+}
+
+/* -------------------------
+   AJUSTES EN MEDIA QUERIES
+   ------------------------- */
+   
+.section-divider {
+    display: none !important;
+}
+
+@media (min-width: 601px) and (max-width: 1050px) {
+    #main-content {
+        padding-top: 0 !important;
+    }
+    .bebidas-hero {
+        padding-top: 30px; 
+        padding-bottom: 30px;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .bebidas-nav {
+        top: 0; 
+        position: relative; 
+    }
+    .bebidas-seccion .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav-list .nav-right-align {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .bebidas-hero {
+        padding: 20px 0; 
+        margin-bottom: 0; 
+        margin-top: 0;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-desc {
+        font-size: 1rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+    .hero-buttons .btn-cta {
+        width: 80%;
+        font-size: 1.15rem; 
+        text-align: center;
+        padding: 16px 20px; 
+        padding-bottom: 16px; 
+    }
+
+    /* Ocultar NAV de Bebidas en Móvil */
+    .bebidas-nav {
+        display: none !important;
+    }
+    .primary-nav-mobile .mobile-nav-separator {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Dos etiquetas por fila en móvil */
+    .bebidas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-m); 
+    }
+    .bebidas-card {
+        flex-direction: column; /* Asegura que la imagen esté arriba */
+    }
+    .bebida-card-img {
+        height: 120px; /* Altura de la imagen */
+    }
+
+    /* DISEÑO DE TARJETA EN MÓVIL */
+    .card-content {
+        padding: 15px 10px; 
+    }
+    .card-header {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 0;
+        margin-bottom: 5px;
+    }
+    .card-title {
+        font-size: 1rem; 
+        margin-bottom: 0;
+        line-height: 1.3;
+    }
+    .card-price {
+        font-size: 0.95rem; 
+        text-align: left; 
+        margin-top: 0;
+    }
+    .card-desc {
+        font-size: 0.8rem; 
+        text-align: left; 
+        line-height: 1.4;
+    }
+    .grid-bebidas-frias .card-desc {
+        font-size: 0.85rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .highlight-title-box {
+        margin: 0 auto 20px auto;
+        padding: 5px 10px;
+        border-width: 3px; 
+    }
+}
+
+/* CORRECCIÓN FINAL */
+@media (max-width: 1050px) {
+    #main-content {
+        padding-top: 0 !important;
+    }
+}

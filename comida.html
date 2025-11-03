@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Carta de Jora Restaurant - Cocina Campestre</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/comida.css" /> 
+
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        
+        <header class="site-header">
+            <div class="container header-inner">
+        
+                <div class="header-col-left"> 
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@jorarestaurante" aria-label="TikTok Jora" target="_blank"><img src="imagenes/tiktok.webp" alt="TikTok"></a>
+                        <a href="https://www.instagram.com/jorarestaurante/?hl=es" aria-label="Instagram Jora" target="_blank"><img src="imagenes/ig.webp" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/p/Jora-Restaurante-100068304454260/?locale=es_LA" aria-label="Facebook Jora" target="_blank"><img src="imagenes/ig.webp" alt="Facebook"></a>
+                        <a href="#" aria-label="YouTube Jora" target="_blank"><img src="imagenes/youtube.webp" alt="YouTube"></a>
+                    </div>
+                    <span class="nav-separator"></span>
+                    <nav class="primary-nav-desktop-left" aria-label="Navegación izquierda"> 
+                        <ul>
+                            <li><a href="index.html#inicio">Inicio</a></li>
+                            <li><a href="index.html#visitanos">Shows</a></li>
+                            <li><a href="index.html#conocenos">Nosotros</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        
+                <a class="logo" href="index.html#inicio" aria-label="Jora Restaurant - Ir a inicio">
+                    <img src="imagenes/JORALOGOMEJOR.webp" alt="Logo de Jora Restaurant Campestre" width="260" height="76" />
+                </a>
+                
+                <div class="header-col-right">
+                    <nav class="primary-nav-desktop-right" aria-label="Navegación derecha"> 
+                        <ul>
+                            <li><a href="eventos.html">Evento</a></li>
+                            <li><a href="shows.html">Show</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                        </ul>
+                    </nav>
+                    <span class="nav-separator"></span>
+                    <div class="header-ctas">
+                        <a href="index.html#reserva" class="nav-cta nav-cta-reserva"> 
+                            <img src="imagenes/reserva.webp" alt="Reservar">
+                            <span>Reserva</span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/1N38ejmfC8MJ4Jpj9" target="_blank" rel="noopener noreferrer" class="nav-cta nav-cta-ubicanos">
+                            <img src="imagenes/ubi.webp" alt="Ubicación">
+                            <span>Ubicanos</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav id="primary-nav-mobile" class="primary-nav-mobile" aria-label="Navegación principal móvil">
+                    <ul>
+                        <li><a href="#entradas">Entradas</a></li>
+                        <li><a href="#parrilla">Parrilla</a></li>
+                        <li><a href="#ninos">Niños</a></li>
+                        <li><a href="#postres">Postres</a></li>
+                        <li><a href="#fondos">Fondos</a></li>
+                        <li><a href="bebidas.html">Bebidas</a></li>
+                        <li><a href="#guarniciones">Guarniciones</a></li>
+                        
+                        <li class="mobile-nav-separator"><a href="index.html#inicio">Volver a Inicio</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-controls="primary-nav-mobile" aria-expanded="false" aria-label="Abrir menú" type="button">
+                    <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+                </button>
+                
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="comida-hero" id="comida-top">
+                <div class="container">
+                    <h1 class="hero-title">Nuestra Carta Campestre</h1>
+                    <p class="hero-desc">¡Descarga nuestra carta en PDF!</p>
+                    <div class="hero-buttons">
+                        <a href="./archivos/CARTA_ALIMENTOS.pdf" download class="btn-cta btn-carta-download">Carta de Alimentos</a>
+                        <a href="./archivos/CARTA_BEBIDAS.pdf" download class="btn-cta btn-carta-download">Carta de Bebidas</a>
+                    </div>
+                </div>
+            </section>
+            
+            <nav class="comida-nav" aria-label="Navegación de categorías">
+                <div class="container nav-container">
+                    <ul class="nav-list">
+                        <li><a href="#entradas">Entradas</a></li>
+                        <li><a href="#fondos">Fondos</a></li>
+                        <li><a href="#parrilla">Parrilla</a></li>
+                        <li><a href="bebidas.html" class="nav-cta-bebidas">Bebidas</a></li>
+                        <li><a href="#ninos">Niños</a></li>
+                        <li><a href="#guarniciones">Guarniciones</a></li>
+                        <li><a href="#postres">Postres</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="single-background-area">
+                
+                <section id="entradas" class="section comida-seccion section-bg-light">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                            <h2 class="section-title title-entradas">Entradas</h2>
+                        </div>
+                        
+                        <h3 class="subtitle">Para Compartir</h3>
+                        <div class="comida-grid grid-compartir">
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Empanaditas de Chanchito" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Empanaditas de Chanchito</h4>
+                                    <p class="card-desc">Empanadas fritas, rellenas de tierno chanchito al palo con queso edam y salsa BBQ.</p>
+                                    <p class="card-price">S/ 38.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Chorizos al Carbón" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Chorizos al Carbón</h4>
+                                    <p class="card-desc">Hechos a la parrilla, chimichurri y pan en horno de barro.</p>
+                                    <p class="card-price">S/ 39.00</p>
+                                </div>
+                            </div>
+                             <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Tequeños de Lomo Saltado" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Tequeños de Lomo Saltado</h4>
+                                    <p class="card-desc">Bastones crocantes rellenos de lomo fino salteado al wok, acompañados de guacamole.</p>
+                                    <p class="card-price">S/ 38.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="subtitle">Personal</h3>
+                        <div class="comida-grid grid-personal">
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Causa de Langostinos" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Causa de Langostinos</h4>
+                                    <p class="card-desc">Masa tradicional bañada en salsa golf, coronada con langostinos, dados de palta, huevos de codorniz y tomatitos cherry.</p>
+                                    <p class="card-price">S/ 45.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Ensalada de la Casa" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Ensalada de la Casa</h4>
+                                    <p class="card-desc">Pollito al Grill con mix de lechuga, vegetales bebé, gajos de naranja, pecanas acarameladas y arándanos.</p>
+                                    <p class="card-price">S/ 39.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Anticucho Clásico" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Anticucho Clásico</h4>
+                                    <p class="card-desc">Corazón de res marinado, acompañado con papas doradas, choclo y con su tradicional ocopa.</p>
+                                    <p class="card-price">S/ 38.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Tamal Norteño" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Tamal Norteño</h4>
+                                    <p class="card-desc">Tamalito verde coronado con jugoso seco de res acompañado con criollita.</p>
+                                    <p class="card-price">S/ 21.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="fondos" class="section comida-seccion">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                            <h2 class="section-title title-fondos">Fondos</h2>
+                        </div>
+                        
+                        <h3 class="subtitle">Especialidades de la Casa</h3>
+                        <div class="comida-grid grid-especialidades">
+                             <div class="comida-card card-destacado">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Arroz con Pato" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Arroz con Pato</h4>
+                                    <p class="card-desc">Pato, cocinado por 5 horas en nuestro aderezo de chicha de jora y loche, servido con arroz meloso.</p>
+                                    <p class="card-price">S/ 82.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card card-destacado">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Chancho al Palo" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Chancho al Palo</h4>
+                                    <p class="card-desc">Panceta cocinada en brasas de leña, arroz del huerto salteado, chutney de ajies y ensalada fresca.</p>
+                                    <p class="card-price">S/ 72.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="subtitle">Más Pedidos</h3>
+                        <div class="comida-grid grid-pedidos">
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Asado de Tira con Puré" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Asado de Tira con Puré</h4>
+                                    <p class="card-desc">280gr de asado cocinado por 5 horas en vino tinto, servido con puré de papas, acompañado de arúgula.</p>
+                                    <p class="card-price">S/ 72.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Lomo Saltado" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Lomo Saltado</h4>
+                                    <p class="card-desc">180gr de lomo fino, flameado al wok servido con papas amarillas fritas y arroz con choclo.</p>
+                                    <p class="card-price">S/ 64.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Pollo BB al Cilindro" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Pollo BB al Cilindro</h4>
+                                    <p class="card-desc">1/2 pollo bebé al cilindro, acompañado de mixtura de tubérculos y ensalada fresca.</p>
+                                    <p class="card-price">S/ 62.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Ceviche Mixto" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Ceviche Mixto</h4>
+                                    <p class="card-desc">Mixtura de mariscos y pesca del día marinada en leche de tigre de ají amarillo acompañado con crocante chicharrón de calamar.</p>
+                                    <p class="card-price">S/ 77.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="subtitle">Los Contundentes</h3>
+                        <div class="comida-grid grid-contundentes">
+                             <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Carapulcra Pachacamina con Sopa Seca" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Carapulcra Pachacamina con Sopa Seca</h4>
+                                    <p class="card-desc">Pequeños trozos de papa deshidratada con chanchito al palo, acompañado de sopa seca y yuquitas fritas.</p>
+                                    <p class="card-price">S/ 65.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Cuy Crocante" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Cuy Crocante</h4>
+                                    <p class="card-desc">Cuy entero de piel crocante, trigotto de ají amarillo, queso, habas y toques de hierbas andinas.</p>
+                                    <p class="card-price">S/ 120.00</p>
+                                </div>
+                            </div>
+                             <div class="comida-card">
+                                 <img src="./imagenes/plato_bandera_1.webp" alt="Seco de Cabrito con Tacu Tacu" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Seco de Cabrito con Tacu Tacu</h4>
+                                    <p class="card-desc">Cabrito en salsa de culantro, con toques frescos de zapallo loche servido con tacu tacu de frejoles.</p>
+                                    <p class="card-price">S/ 72.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Caldo de Gallina" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Caldo de Gallina</h4>
+                                    <p class="card-desc">Caldo tradicional elaborado con gallina de corral, acompañado con spaguetti, huevo, canchita, tapas de limón y cebolla china.</p>
+                                    <p class="card-price">S/ 47.00</p>
+                                </div>
+                            </div>
+                             <div class="comida-card">
+                                 <img src="./imagenes/plato_bandera_1.webp" alt="Paella Mixta" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Paella Mixta</h4>
+                                    <p class="card-desc">Arroz arborio en salsa de lomo con champiñones y vegetales, coronado con lomo fino y langostinos.</p>
+                                    <p class="card-price">S/ 69.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Fettuccini con Ragú de Pato" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Fettuccini con Ragú de Pato</h4>
+                                    <p class="card-desc">Pasta bañada con guiso de pato cocinado en su propia salsa, aceite de albahaca y ralladura de naranja.</p>
+                                    <p class="card-price">S/ 57.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="parrilla" class="section comida-seccion section-bg-light">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                             <h2 class="section-title title-parrilla">Parrilla Angus Choice</h2>
+                        </div>
+                        <div class="parrilla-info-box">
+                            <p class="section-desc">Todos nuestros cortes de carne se sirven con papas fritas, ensalada fresca, champiñones y espárragos salteados al wok.</p>
+                        </div>
+                        <div class="comida-grid grid-parrilla">
+                             <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Lomo Fino" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Lomo Fino (350 gr.)</h4>
+                                    <p class="card-desc">Corte Angus Choice de 350 gr.</p>
+                                    <p class="card-price">S/ 82.00</p>
+                                </div>
+                            </div>
+                             <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Picaña" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Picaña (350 gr.)</h4>
+                                    <p class="card-desc">Corte Angus Choice de 350 gr.</p>
+                                    <p class="card-price">S/ 94.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="ninos" class="section comida-seccion">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                            <h2 class="section-title title-ninos">Para los Niños</h2>
+                        </div>
+                        <div class="comida-grid grid-ninos">
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Pasta a lo Alfredo" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Pasta a lo Alfredo</h4>
+                                    <p class="card-desc">Bañado con salsa bechamel, queso edam y jamón inglés.</p>
+                                    <p class="card-price">S/ 37.00</p>
+                                </div>
+                            </div>
+                             <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Chicken Fingers" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Chicken Fingers</h4>
+                                    <p class="card-desc">Dedos de pechuga de pollo empanizados en quinua roja y blanca, acompañados con papitas francesas.</p>
+                                    <p class="card-price">S/ 37.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="guarniciones" class="section comida-seccion section-bg-light">
+                    <div class="container">
+                        <div class="highlight-title-box">
+                            <h2 class="section-title title-guarniciones">Guarniciones</h2>
+                        </div>
+                        <div class="comida-grid grid-guarniciones">
+                            <div class="comida-card card-destacado">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Verduras al Wok" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Verduras al Wok</h4>
+                                    <p class="card-price">S/ 19.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card card-destacado">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Puré de Papa Amarilla" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Puré de Papa Amarilla</h4>
+                                    <p class="card-price">S/ 16.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card card-destacado">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Papas Fritas" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Papas Fritas</h4>
+                                    <p class="card-desc">Francesas o amarillas.</p>
+                                    <p class="card-price">S/ 12.00</p>
+                                </div>
+                            </div>
+                            <div class="comida-card card-destacado">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Arroz con Choclo" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Arroz con Choclo</h4>
+                                    <p class="card-price">S/ 10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="postres" class="section comida-seccion">
+                    <div class="container">
+                         <div class="highlight-title-box">
+                            <h2 class="section-title title-postres">Postres</h2>
+                        </div>
+                        <div class="comida-grid grid-postres">
+                            <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Picarones" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Picarones</h4>
+                                    <p class="card-desc">Clásicos aros de masa frita de zapallo y camote, bañados en miel de chancaca.</p>
+                                    <p class="card-price">S/ 21.00</p>
+                                </div>
+                            </div>
+                             <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Tiramisú" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Tiramisú</h4>
+                                    <p class="card-desc">El clásico postre italiano de café, crema de mascarpone y bizcochos.</p>
+                                    <p class="card-price">S/ 19.00</p>
+                                </div>
+                            </div>
+                             <div class="comida-card">
+                                <img src="./imagenes/plato_bandera_1.webp" alt="Merengado de Guanábana" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Merengado de Guanábana</h4>
+                                    <p class="card-desc">Suave crema de guanábana coronada con merengue flameado.</p>
+                                    <p class="card-price">S/ 19.00</p>
+                                </div>
+                            </div>
+                             <div class="comida-card">
+                                 <img src="./imagenes/plato_bandera_1.webp" alt="Helado Artesanal" class="comida-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">Helado Artesanal</h4>
+                                    <p class="card-desc">Preguntar por las frutas de estación disponibles.</p>
+                                    <p class="card-price">S/ 21.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="opcion-petfriendly" class="section comida-seccion section-bg-light">
+                    <div class="container">
+                         <div class="opcion-petfriendly">
+                            <img src="imagenes/petfriendly_icono.webp" alt="Icono Petfriendly" class="petfriendly-icon">
+                            <h2 class="section-title title-petfriendly">Opción Petfriendly</h2>
+                            <p class="petfriendly-desc">Pechuga de pollo o pavo, cereales, tubérculos y vegetales. (Si desea más información, consultar con su mesero.)</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <a href="https://wa.me/51967715165" target="_blank" rel="noopener" class="whatsapp-flotante" aria-label="Contactar por WhatsApp">
+                <img src="imagenes/whatsapp-flotante.webp" alt="WhatsApp">
+            </a>
+
+            <footer class="site-footer-dark">
+                <div class="container footer-grid">
+                    <div class="footer-info">
+                        <img src="./imagenes/JORALOGOMEJOR.webp" alt="Logo Jora Restaurant footer" class="footer-logo">
+                        <p>
+                            <strong>Jora Restaurante Campestre</strong> es un espacio donde la gastronomía peruana
+                            se fusiona con la naturaleza para ofrecer experiencias únicas. Ideal para familias,
+                            empresas y celebraciones especiales.
+                        </S>
+                        <h4>Contáctanos</h4>
+                        <p class="footer-contact">
+                            <a href="https://wa.me/51967715165" target="_blank" rel="noopener">
+                            <span class="icon">💬</span> 967 715 165
+                            </a><br>
+                            <a href="mailto:Jorarestaurante1@gmail.com">
+                            <span class="icon">📧</span> Jorarestaurante1@gmail.com
+                            </a>
+                        </p>
+                        <h4>Síguenos</h4>
+                        <div class="footer-social">
+                            <a href="#" aria-label="TikTok"><img src="./imagenes/tiktok.webp" alt="TikTok Jora"></a>
+                            <a href="#" aria-label="Instagram"><img src="./imagenes/ig.webp" alt="Instagram Jora"></a>
+                            <a href="#" aria-label="YouTube"><img src="imagenes/youtube.webp" alt="YouTube Jora"></a>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Explora</h4>
+                        <ul>
+                            <li><a href="index.html#inicio">Inicio</a></li>
+                            <li><a href="index.html#platos">Restaurante</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="index.html#reserva">Reserva</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                        </ul>
+                        <ul class="footer-legal">
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li>
+                                <a href="#">Libro de Reclamaciones</a>
+                                <img src="./imagenes/librodereclamaciones.webp" alt="Icono Libro de Reclamaciones Perú" class="footer-libro">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact-form">
+                        <h4>Contáctanos</h4>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="footer-name">Nombre:</label>
+                                <input type="text" id="footer-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footer-email">Correo:</label>
+                                <input type="email" id="footer-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footer-message">Mensaje:</label>
+                                <textarea id="footer-message" name="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-footer-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© <span id="year"></span> Jora Restaurant. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </main>
+
+        <script>
+          // Script simple para actualizar el año del copyright
+          document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
